@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <link rel='stylesheet' type='text/css' href='../Content/artists.css' />
+</head>
+
+<h2>Artists</h2>
+
+@for (var i = 0; i < Model.Count; i = i + 3)
+{
+    <div class="row">
+        <a href="../artists/details?name=@Model[i].name">
+            <img class="col-sm-4 img-responsive artist-img" src="@Model[i].picture">
+        </a>
+        <a href="../artists/details?name=@Model[i + 1].name">
+            <img class="col-sm-4 img-responsive artist-img" src="@Model[i + 1].picture">
+        </a>
+        <a href="../artists/details?name=@Model[i + 2].name">
+            <img class="col-sm-4 img-responsive artist-img" src="@Model[i + 2].picture">
+        </a>
+    </div>
+    <br />
+}

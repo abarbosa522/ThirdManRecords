@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.artist.name</h2>
+
+<div class="row">
+
+    <img class="col-md-6" src="@Model.artist.full_picture" />
+
+    <div class="col-md-6">
+        <text>@Model.artist.description</text>
+
+        <!-- if the artist is a band - list the band members and their roles-->
+        @if(Model.artist.band)
+        {
+            <h3>Band Members: </h3>
+            foreach(var member in Model.band_members)
+            {
+                <p><strong>@member.member</strong>: @member.role</p>
+            }
+        }
+    </div>
+</div>
+
+<br />
+
+<!-- Records -->
+
+<h3>Records</h3>
+
+@if(Model.own_records.Count == 0)
+{
+    <p>This artist has no records.</p>
+}
+else
+{
+    foreach (var record in Model.own_records)
+    {
+        <img class="img-responsive" src="@record.cover">
+    }
+}
+
+<br />
+
+<!-- if the artist is not a band - list the record credits -->
+@if (!Model.artist.band)
+{
+    <h3>Record Credits</h3>
+
+    if(Model.record_credits.Count == 0)
+    {
+        <p>This artist has no record credits.</p>
+    }
+    else
+    {
+        foreach (var credit in Model.record_credits)
+        {
+            <p>@credit.role in @credit.record</p>
+        }
+    }
+}
+
+<br />
+
+<!-- if the artist is not a band - list the song credits -->
+@if (!Model.artist.band)
+{
+    <h3>Song Credits</h3>
+
+    if (Model.song_credits.Count == 0)
+    {
+        <p>This artist has no song credits.</p>
+    }
+    else
+    {
+        foreach (var credit in Model.song_credits)
+        {
+            <p>@credit.role in @credit.song</p>
+        }
+    }
+}
