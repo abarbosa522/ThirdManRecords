@@ -12,6 +12,7 @@ namespace ThirdManRecords.Models
         {
         }
 
+        public virtual DbSet<Alias> aliases { get; set; }
         public virtual DbSet<Artist> artists { get; set; }
         public virtual DbSet<BandMember> band_members { get; set; }
         public virtual DbSet<RecordCredit> record_credits { get; set; }
@@ -22,6 +23,14 @@ namespace ThirdManRecords.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Alias>()
+                .Property(e => e.code)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Alias>()
+                .Property(e => e.artist)
+                .IsUnicode(false);
+
             modelBuilder.Entity<Artist>()
                 .Property(e => e.name)
                 .IsUnicode(false);
@@ -43,19 +52,25 @@ namespace ThirdManRecords.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Artist>()
-                .HasMany(e => e.band_members)
+                .HasMany(e => e.aliases)
+                .WithRequired(e => e.artist1)
+                .HasForeignKey(e => e.artist)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Artist>()
+                .HasMany(e => e.bandMembers)
                 .WithRequired(e => e.artist)
                 .HasForeignKey(e => e.member)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Artist>()
-                .HasMany(e => e.band_members1)
+                .HasMany(e => e.bandMembers1)
                 .WithRequired(e => e.artist1)
                 .HasForeignKey(e => e.band)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Artist>()
-                .HasMany(e => e.record_credits)
+                .HasMany(e => e.recordCredits)
                 .WithRequired(e => e.artist1)
                 .HasForeignKey(e => e.artist)
                 .WillCascadeOnDelete(false);
@@ -67,7 +82,7 @@ namespace ThirdManRecords.Models
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Artist>()
-                .HasMany(e => e.song_credits)
+                .HasMany(e => e.songCredits)
                 .WithRequired(e => e.artist1)
                 .HasForeignKey(e => e.artist)
                 .WillCascadeOnDelete(false);
@@ -145,6 +160,10 @@ namespace ThirdManRecords.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Record>()
+                .Property(e => e.release_date)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Record>()
                 .Property(e => e.series)
                 .IsUnicode(false);
 
@@ -157,13 +176,13 @@ namespace ThirdManRecords.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Record>()
-                .HasMany(e => e.record_credits)
+                .HasMany(e => e.recordCredits)
                 .WithRequired(e => e.record1)
                 .HasForeignKey(e => e.record)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Record>()
-                .HasMany(e => e.record_editions)
+                .HasMany(e => e.recordEditions)
                 .WithRequired(e => e.record1)
                 .HasForeignKey(e => e.record)
                 .WillCascadeOnDelete(false);
@@ -207,7 +226,7 @@ namespace ThirdManRecords.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Song>()
-                .HasMany(e => e.song_credits)
+                .HasMany(e => e.songCredits)
                 .WithRequired(e => e.song1)
                 .HasForeignKey(e => e.song)
                 .WillCascadeOnDelete(false);

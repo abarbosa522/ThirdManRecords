@@ -152,9 +152,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RecordsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Alias.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\BandMember.cs" />
     <Compile Include="Models\Record.cs" />
@@ -165,6 +167,7 @@
     <Compile Include="Models\ThirdManContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ArtistDetailsViewModel.cs" />
+    <Compile Include="ViewModels\RecordDetailsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -206,6 +209,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Artists\Index.cshtml" />
     <Content Include="Views\Artists\Details.cshtml" />
+    <Content Include="Views\Records\Index.cshtml" />
+    <Content Include="Views\Records\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

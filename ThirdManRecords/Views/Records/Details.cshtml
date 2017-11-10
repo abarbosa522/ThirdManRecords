@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.record.title (@Model.record.code)</h2>
+
+<div class="row">
+    <img class="col-md-6" src="@Model.record.full_cover" />
+
+    <div class="col-md-6">
+        <p><strong>Artist: </strong> <a href="../artists/details?name=@Model.record.artist">@Model.record.artist</a></p>
+
+        <p><strong>Diameter: </strong> @Model.record.diameter"</p>
+
+        <p><strong>Vault Exclusive? </strong>
+        
+            @if(Model.record.vault != 0)
+            {
+                <text>Yes (Package @Model.record.vault)</text>
+            }
+            else
+            {
+                <text>No</text>
+            }
+        </p>
+
+        <p><strong>Release Date: </strong> @Model.record.release_date</p>
+
+        <p><strong>Series:</strong> @Model.record.series</p>
+        
+        <iframe src="@Model.record.spotify_link" width="300" height="100" frameborder="0" allowtransparency="true"></iframe>
+        
+        @if (Model.record.vault == 0)
+        {
+            <p><strong><a href="@Model.record.store_link">Buy It Here!</a></strong></p>
+        }
+        
+    </div>
+</div>
+
+<h3>Tracklist</h3>
+
+@foreach(var song in Model.songs)
+{
+    <p>Side @song.track: @song.title</p>
+
+    foreach(var song_credit in Model.song_credits)
+    {
+        if(song_credit.song == song.code)
+        {
+            <p>@song_credit.role: <a href="../artists/details?name=@song_credit.artist">@song_credit.artist</a></p>
+        }
+    }
+}
+
+
+<h3>Credits</h3>
+
+@foreach(var credit in Model.record_credits)
+{
+    <p>@credit.role by <a href="../artists/details?name=@credit.artist">@credit.artist</a></p>
+}
+
+<h3>Editions</h3>
+
+@foreach(var edition in Model.record_editions)
+{
+    <div class="row">
+        <img class="col-md-6" src="@edition.picture" />
+
+        <div class="col-md-6">
+            <p>@edition.edition</p>
+
+            <p>Quantity: @edition.quantity</p>
+        </div>
+    </div>
+    <br />
+}
+<br />

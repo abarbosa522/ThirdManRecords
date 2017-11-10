@@ -10,16 +10,16 @@
 
     <img class="col-md-6" src="@Model.artist.full_picture" />
 
-    <div class="col-md-6">
+    <div class="col-md-3">
         <text>@Model.artist.description</text>
 
         <!-- if the artist is a band - list the band members and their roles-->
         @if(Model.artist.band)
         {
-            <h3>Band Members: </h3>
+            <h3>Band Members</h3>
             foreach(var member in Model.band_members)
             {
-                <p><strong>@member.member</strong>: @member.role</p>
+                <p><a href="../artists/details?name=@member.member"><strong>@member.member</strong></a>: @member.role</p>
             }
         }
     </div>
@@ -31,16 +31,24 @@
 
 <h3>Records</h3>
 
-@if(Model.own_records.Count == 0)
+@if(Model.records.Count == 0)
 {
     <p>This artist has no records.</p>
 }
 else
 {
-    foreach (var record in Model.own_records)
-    {
-        <img class="img-responsive" src="@record.cover">
-    }
+    <div class="row">
+        @foreach (var record in Model.records)
+        {
+            <div class="col-sm-4">
+                <a href="../records/details?code=@record.code">
+                    <img class="img-responsive" src="@record.cover">
+                </a>
+                <text>@record.title (@record.code)</text>
+            </div>
+        }
+    </div>
+    
 }
 
 <br />
@@ -58,8 +66,15 @@ else
     {
         foreach (var credit in Model.record_credits)
         {
-            <p>@credit.role in @credit.record</p>
+            foreach(var record in Model.record_credits_records)
+            {
+                if(record.code == credit.record)
+                {
+                    <p>@credit.role in "@record.title" (<a href="../records/details?code=@record.code">@record.code</a>)</p>
+                }
+            }
         }
+
     }
 }
 
@@ -78,7 +93,19 @@ else
     {
         foreach (var credit in Model.song_credits)
         {
-            <p>@credit.role in @credit.song</p>
+            foreach(var song in Model.songs)
+            {
+                if(song.code == credit.song)
+                {
+                    foreach(var record in Model.song_credits_records)
+                    {
+                        if(record.code == song.record)
+                        {
+                            <p>@credit.role in "@song.title" from "@record.title" (<a href="../records/details?code=@record.code">@record.code</a>)</p>
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -11,11 +11,12 @@ namespace ThirdManRecords.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Artist()
         {
-            band_members = new HashSet<BandMember>();
-            band_members1 = new HashSet<BandMember>();
-            record_credits = new HashSet<RecordCredit>();
+            aliases = new HashSet<Alias>();
+            bandMembers = new HashSet<BandMember>();
+            bandMembers1 = new HashSet<BandMember>();
+            recordCredits = new HashSet<RecordCredit>();
             records = new HashSet<Record>();
-            song_credits = new HashSet<SongCredit>();
+            songCredits = new HashSet<SongCredit>();
         }
 
         [Key]
@@ -41,18 +42,21 @@ namespace ThirdManRecords.Models
         public bool band { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BandMember> band_members { get; set; }
+        public virtual ICollection<Alias> aliases { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BandMember> band_members1 { get; set; }
+        public virtual ICollection<BandMember> bandMembers { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RecordCredit> record_credits { get; set; }
+        public virtual ICollection<BandMember> bandMembers1 { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RecordCredit> recordCredits { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Record> records { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SongCredit> song_credits { get; set; }
+        public virtual ICollection<SongCredit> songCredits { get; set; }
     }
 }

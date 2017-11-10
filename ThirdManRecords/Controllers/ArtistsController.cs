@@ -28,12 +28,13 @@ namespace ThirdManRecords.Controllers
             return View(artists);
         }
 
-        // /artists/details/{name}
+        // /artists/details?name={name}
         public ActionResult Details(string name)
         {
             //build the view model
             var viewModel = new ArtistDetailsViewModel();
 
+            //connect to the database
             var db = new ThirdManContext();
 
             //get the artist with name 'name'
@@ -53,7 +54,7 @@ namespace ThirdManRecords.Controllers
 
             foreach(var record in query2)
             {
-                viewModel.own_records.Add(record);
+                viewModel.records.Add(record);
             }
 
             //if the artist is a band - get the band members
@@ -68,27 +69,64 @@ namespace ThirdManRecords.Controllers
                     viewModel.band_members.Add(member);
                 }
             }
-            //if the artist is not a band, get the not own records, record credits, songs and song credits
+            //if the artist is not a band, get the record and song credits
             else
             {
-                var query4 = from r in db.record_credits
+                //get the song credits and respective songs and records
+                var query4 = from r in db.song_credits
                              where r.artist == viewModel.artist.name
                              select r;
 
                 foreach (var credit in query4)
                 {
-                    viewModel.record_credits.Add(credit);
+                    viewModel.song_credits.Add(credit);
+
+                    var query5 = from s in db.songs
+                                 where s.code == credit.song
+                                 select s;
+
+                    foreach(var song in query5)
+                    {
+                        if(!viewModel.songs.Contains(song))
+                        {
+                            viewModel.songs.Add(song);
+
+                            var query6 = from r in db.records
+                                         where r.code == song.record
+                                         select r;
+
+                            foreach (var record in query6)
+                            {
+                                if(!viewModel.song_credits_records.Contains(record))
+                                {
+                                    viewModel.song_credits_records.Add(record);
+                                }
+                            }
+                        }
+                    }
                 }
 
-                var query5 = from r in db.song_credits
+                //get the record credits and respective records
+                var query7 = from r in db.record_credits
                              where r.artist == viewModel.artist.name
                              select r;
 
-                foreach (var credit in query5)
+                foreach (var credit in query7)
                 {
-                    viewModel.song_credits.Add(credit);
-                }
+                    viewModel.record_credits.Add(credit);
 
+                    var query8 = from r in db.records
+                                 where r.code == credit.record
+                                 select r;
+
+                    foreach(var rec in query8)
+                    {
+                        if (!viewModel.record_credits_records.Contains(rec))
+                        {
+                            viewModel.record_credits_records.Add(rec);
+                        }
+                    }
+                }
             }
 
             //return the view model

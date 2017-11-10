@@ -11,8 +11,8 @@ namespace ThirdManRecords.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Record()
         {
-            record_credits = new HashSet<RecordCredit>();
-            record_editions = new HashSet<RecordEdition>();
+            recordCredits = new HashSet<RecordCredit>();
+            recordEditions = new HashSet<RecordEdition>();
             songs = new HashSet<Song>();
         }
 
@@ -38,10 +38,11 @@ namespace ThirdManRecords.Models
         [StringLength(255)]
         public string full_cover { get; set; }
 
-        public bool vault { get; set; }
+        public int vault { get; set; }
 
-        [Column(TypeName = "date")]
-        public DateTime release_date { get; set; }
+        [Required]
+        [StringLength(255)]
+        public string release_date { get; set; }
 
         [Required]
         [StringLength(255)]
@@ -58,10 +59,10 @@ namespace ThirdManRecords.Models
         public virtual Artist artist1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RecordCredit> record_credits { get; set; }
+        public virtual ICollection<RecordCredit> recordCredits { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RecordEdition> record_editions { get; set; }
+        public virtual ICollection<RecordEdition> recordEditions { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Song> songs { get; set; }
