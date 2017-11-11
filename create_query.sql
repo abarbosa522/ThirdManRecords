@@ -181,7 +181,7 @@ INSERT INTO bandMembers VALUES ('THEWHITESTRIPES-JACKWHITE', 'The White Stripes'
 INSERT INTO bandMembers VALUES ('THEWHITESTRIPES-MEGWHITE', 'The White Stripes', 'Meg White', 'Drums');
 
 /* TMR003 */
-INSERT INTO artists VALUES ('Mildred And The Mice', 'MAM', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/mildred-and-the-mice.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/mildred-and-the-mice.jpg', 'TMR Artist', 1);
+INSERT INTO artists VALUES ('Mildred And The Mice', 'MAM', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/mildred-and-the-mice.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/mildred-and-the-mice.jpg', 'Blue-Series Artist', 1);
 INSERT INTO artists VALUES ('Tail', 'T', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
 INSERT INTO artists VALUES ('Trap', 'T', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
 INSERT INTO artists VALUES ('Mildred', 'M', 'https://img.discogs.com/JdywZaLjgGrTG7FsRMhUdggEbG4=/453x600/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2527841-1323379773.jpeg.jpg', 'https://img.discogs.com/JdywZaLjgGrTG7FsRMhUdggEbG4=/453x600/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2527841-1323379773.jpeg.jpg', 'Other', 0);
@@ -214,3 +214,145 @@ INSERT INTO bandMembers VALUES ('MILDREDANDTHEMICE-MILDRED', 'Mildred And The Mi
 INSERT INTO bandMembers VALUES ('MILDREDANDTHEMICE-TAIL', 'Mildred And The Mice', 'Tail', 'Bass');
 INSERT INTO bandMembers VALUES ('MILDREDANDTHEMICE-TRAP', 'Mildred And The Mice', 'Trap', 'Drums');
 INSERT INTO bandMembers VALUES ('MILDREDANDTHEMICE-SQUEAK', 'Mildred And The Mice', 'Squeak', 'Guitar');
+
+/* TMR004 */
+INSERT INTO artists VALUES ('Rachelle Garniez', 'RG', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/rachelle-garniez.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/rachelle-garniez.jpg', 'Blue-Series Artist', 0);
+
+INSERT INTO records VALUES ('TMR004', 'Rachelle Garniez', 'My House Of Peace', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr004-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr004-cover-ab.jpg', 0, '25 May 2009', 'Blue Series', 'https://thirdmanstore.com/rachelle-garniez-my-house-of-peace-7-vinyl', 'https://open.spotify.com/embed?uri=spotify:album:47OeiRK1qGkqS5VK9XmFBI');
+
+INSERT INTO recordEditions VALUES ('TMR004-BLACK', 'TMR004', 'Black', 'Unlimited', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR004-black-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR004-TRI-COLOR', 'TMR004', 'Tri-Color', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR004-tricolor-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR004-GLOW', 'TMR004', 'Glow', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR-glow7inch-abfull.jpg');
+
+INSERT INTO songs VALUES ('TMR004-A', 'TMR004', 'My House Of Peace', 'A');
+
+INSERT INTO recordCredits VALUES ('TMR004-BASS', 'TMR004', 'Jack Lawrence', 'Bass');
+INSERT INTO recordCredits VALUES ('TMR004-DRUMS', 'TMR004', 'Jack White', 'Drums');
+INSERT INTO recordCredits VALUES ('TMR004-ENGINEERING1', 'TMR004', 'Jack White', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR004-ENGINEERING2', 'TMR004', 'Vance Powell', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR004-MIXING1', 'TMR004', 'Jack White', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR004-MIXING2', 'TMR004', 'Vance Powell', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR004-ORGAN', 'TMR004', 'Rachelle Garniez', 'Organ');
+INSERT INTO recordCredits VALUES ('TMR004-PIANO', 'TMR004', 'Rachelle Garniez', 'Piano');
+INSERT INTO recordCredits VALUES ('TMR004-PRODUCING', 'TMR004', 'Jack White', 'Producing');
+INSERT INTO recordCredits VALUES ('TMR004-VOCALS', 'TMR004', 'Rachelle Garniez', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR004-WRITING', 'TMR004', 'Rachelle Garniez', 'Writing');
+
+/* TMR005 */
+INSERT INTO records VALUES ('TMR005', 'The Dead Weather', 'I Cut Like A Buffalo', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/TMR005-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR005-ab.jpg', 0, '2009', 'Default', 'Not Available', 'Not Available');
+
+INSERT INTO recordEditions VALUES ('TMR005-TRI-COLOR', 'TMR005', 'Tri-Color', '300', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR005-tricolor-ab.jpg');
+
+INSERT INTO songs VALUES ('TMR005-A', 'TMR005', 'I Cut Like A Buffalo', 'A');
+
+/* TMR006 */
+INSERT INTO records VALUES ('TMR006', 'The Dead Weather', 'I Cut Like A Buffalo', 12, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/TMR006-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR006-a.jpg', 0, '2009', 'Default', 'Not Available', 'Not Available');
+
+INSERT INTO recordEditions VALUES ('TMR006-BLACK', 'TMR006', 'Black', '500', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr006-black-a.jpg');
+
+INSERT INTO songs VALUES ('TMR006-A', 'TMR006', 'I Cut Like A Buffalo', 'A');
+
+/* TMR007 */
+INSERT INTO artists VALUES ('Joshua V. Smith', 'JVS', 'http://www1.pictures.zimbio.com/gi/Joshua+V+Smith+md6iPkM5LJvm.jpg', 'http://www1.pictures.zimbio.com/gi/Joshua+V+Smith+md6iPkM5LJvm.jpg', 'Other', 0);
+INSERT INTO artists VALUES ('Wes Garland', 'WG', 'https://img.discogs.com/mLHXM6UXtDLCeH9NLM9pwMcjbUU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-2135761-1488028248-3878.jpeg.jpg', 'https://img.discogs.com/mLHXM6UXtDLCeH9NLM9pwMcjbUU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-2135761-1488028248-3878.jpeg.jpg', 'Other', 0);
+INSERT INTO artists VALUES ('Van Morrison', 'VM', 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Van_morrison%2C_slieve_donard_2015.jpg', 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Van_morrison%2C_slieve_donard_2015.jpg', 'Other', 0);
+
+INSERT INTO records VALUES ('TMR007', 'The Dead Weather', 'Treat Me Like Your Mother', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr007-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr007-cover-ab.jpg', 0, '25 May 2009', 'Default', 'https://thirdmanstore.com/the-dead-weather-treat-me-like-your-mother-7-vinyl', 'https://open.spotify.com/embed?uri=spotify:album:3IiRDuYtLQ1WpAeO9jwm3k');
+
+INSERT INTO recordEditions VALUES ('TMR007-BLACK', 'TMR007', 'Black', 'Unlimited', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr007-black-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR007-TRI-COLOR', 'TMR007', 'Tri-Color', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr007-tricolor-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR007-GLOW', 'TMR007', 'Glow', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR-glow7inch-abfull.jpg');
+
+INSERT INTO songs VALUES ('TMR007-A', 'TMR007', 'Treat Me Like Your Mother', 'A');
+INSERT INTO songs VALUES ('TMR007-B', 'TMR007', 'You Just Can''t Win', 'B');
+
+INSERT INTO recordCredits VALUES ('TMR007-DESIGN', 'TMR007', 'Rob Jones', 'Packaging Design');
+INSERT INTO recordCredits VALUES ('TMR007-ENGINEERING1', 'TMR007', 'Vance Powell', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR007-ENGINEERING2', 'TMR007', 'Joshua V. Smith', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR007-LACQUERCUT', 'TMR007', 'Wes Garland', 'Lacquer Cut');
+INSERT INTO recordCredits VALUES ('TMR007-MIXING1', 'TMR007', 'Jack White', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR007-MIXING2', 'TMR007', 'Vance Powell', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR007-PHOTOGRAPHY', 'TMR007', 'David Swanson', 'Photography');
+INSERT INTO recordCredits VALUES ('TMR007-PRODUCING', 'TMR007', 'Jack White', 'Producing');
+
+INSERT INTO songCredits VALUES ('TMR007-A-WRITER1', 'TMR007-A', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR007-A-WRITER2', 'TMR007-A', 'Dean Fertita', 'Writer');
+INSERT INTO songCredits VALUES ('TMR007-A-WRITER3', 'TMR007-A', 'Jack Lawrence', 'Writer');
+INSERT INTO songCredits VALUES ('TMR007-A-WRITER4', 'TMR007-A', 'Jack White', 'Writer');
+INSERT INTO songCredits VALUES ('TMR007-B-WRITER1', 'TMR007-B', 'Van Morrison', 'Writer');
+
+/* TMR008 */
+INSERT INTO artists VALUES ('Bob Dylan', 'BD', 'https://tcjewfolk.com/wp-content/uploads//2017/09/bobdylan.jpg', 'https://tcjewfolk.com/wp-content/uploads//2017/09/bobdylan.jpg', 'Other', 0);
+INSERT INTO artists VALUES ('Philip J. Harvey', 'PJH', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Ian Montone', 'IM', 'http://memberdata.s3.amazonaws.com/hi/hitsdd/photos/hitsdd_photo_gal__photo_1866442886.png', 'http://memberdata.s3.amazonaws.com/hi/hitsdd/photos/hitsdd_photo_gal__photo_1866442886.png', 'Other', 0);
+
+INSERT INTO records VALUES ('TMR008', 'The Dead Weather', 'Horehound', 12, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr008-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr008-cover-ab.jpg', 0, '14 July 2009', 'Default', 'https://thirdmanstore.com/the-dead-weather-horehound-12-vinyl', 'https://open.spotify.com/embed?uri=spotify:album:1nxECUyuIZF5JCrO9Xo2jO');
+
+INSERT INTO recordEditions VALUES ('TMR008-BLACK', 'TMR008', 'Black', 'Unlimited', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr008-black-1ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR008-SPLIT-COLOR', 'TMR008', 'Split-Color', '300', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR008-colored-ab.jpg');
+
+INSERT INTO songs VALUES ('TMR008-A1', 'TMR008', '60 Feet Tall', 'A1');
+INSERT INTO songs VALUES ('TMR008-A2', 'TMR008', 'Hang You From The Heavens', 'A2');
+INSERT INTO songs VALUES ('TMR008-A3', 'TMR008', 'I Cut Like A Buffalo', 'A3');
+INSERT INTO songs VALUES ('TMR008-A4', 'TMR008', 'So Far From Your Weapon', 'A4');
+INSERT INTO songs VALUES ('TMR008-B1', 'TMR008', 'Treat Me Like Your Mother', 'B1');
+INSERT INTO songs VALUES ('TMR008-B2', 'TMR008', 'Rocking Horse', 'B2');
+INSERT INTO songs VALUES ('TMR008-B3', 'TMR008', 'New Pony', 'B3');
+INSERT INTO songs VALUES ('TMR008-C1', 'TMR008', 'Bone House', 'C1');
+INSERT INTO songs VALUES ('TMR008-C2', 'TMR008', '3 Birds', 'C2');
+INSERT INTO songs VALUES ('TMR008-C3', 'TMR008', 'No Hassle Night', 'C3');
+INSERT INTO songs VALUES ('TMR008-C4', 'TMR008', 'Will There Be Enough Water?', 'C4');
+
+INSERT INTO recordCredits VALUES ('TMR008-BASS', 'TMR008', 'Jack Lawrence', 'Bass');
+INSERT INTO recordCredits VALUES ('TMR008-BACKINGVOCALS1', 'TMR008', 'Jack Lawrence', 'Backing Vocals');
+INSERT INTO recordCredits VALUES ('TMR008-DESIGN', 'TMR008', 'Rob Jones', 'Packaging Design');
+INSERT INTO recordCredits VALUES ('TMR008-DRUMS', 'TMR008', 'Jack White', 'Drums');
+INSERT INTO recordCredits VALUES ('TMR008-VOCALS1', 'TMR008', 'Jack White', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR008-ENGINEERING1', 'TMR008', 'Vance Powell', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR008-ENGINEERING2', 'TMR008', 'Joshua V. Smith', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR008-GUITAR', 'TMR008', 'Dean Fertita', 'Guitar');
+INSERT INTO recordCredits VALUES ('TMR008-PIANO', 'TMR008', 'Dean Fertita', 'Piano');
+INSERT INTO recordCredits VALUES ('TMR008-ORGAN', 'TMR008', 'Dean Fertita', 'Organ');
+INSERT INTO recordCredits VALUES ('TMR008-SYNTH', 'TMR008', 'Dean Fertita', 'Synth');
+INSERT INTO recordCredits VALUES ('TMR008-BACKINGVOCALS2', 'TMR008', 'Dean Fertita', 'Backing Vocals');
+INSERT INTO recordCredits VALUES ('TMR008-LACQUERCUT', 'TMR008', 'Wes Garland', 'Lacquer Cut');
+INSERT INTO recordCredits VALUES ('TMR008-MANAGEMENT', 'TMR008', 'Ian Montone', 'Management');
+INSERT INTO recordCredits VALUES ('TMR008-MIXING1', 'TMR008', 'Jack White', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR008-MIXING2', 'TMR008', 'Vance Powell', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR008-PHOTOGRAPHY', 'TMR008', 'David Swanson', 'Photography');
+INSERT INTO recordCredits VALUES ('TMR008-PRODUCING', 'TMR008', 'Jack White', 'Producing');
+INSERT INTO recordCredits VALUES ('TMR008-VOCALS2', 'TMR008', 'Alison Mosshart', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR008-PERCURSSION', 'TMR008', 'Alison Mosshart', 'Percurssion');
+
+INSERT INTO songCredits VALUES ('TMR008-A1-WRITER1', 'TMR008-A1', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-A1-WRITER2', 'TMR008-A1', 'Dean Fertita', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-A2-WRITER1', 'TMR008-A2', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-A2-WRITER2', 'TMR008-A2', 'Dean Fertita', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-A3-GUITAR', 'TMR008-A3', 'Alison Mosshart', 'Guitar');
+INSERT INTO songCredits VALUES ('TMR008-A3-WRITER', 'TMR008-A3', 'Jack White', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-A4-WRITER', 'TMR008-A4', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-B1-WRITER1', 'TMR008-B1', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-B1-WRITER2', 'TMR008-B1', 'Dean Fertita', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-B1-WRITER3', 'TMR008-B1', 'Jack Lawrence', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-B1-WRITER4', 'TMR008-B1', 'Jack White', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-B2-BASS', 'TMR008-B2', 'Dean Fertita', 'Bass');
+INSERT INTO songCredits VALUES ('TMR008-B2-GUITAR', 'TMR008-B2', 'Jack Lawrence', 'Guitar');
+INSERT INTO songCredits VALUES ('TMR008-B2-WRITER1', 'TMR008-B2', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-B2-WRITER2', 'TMR008-B2', 'Jack White', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-B3-WRITER', 'TMR008-B3', 'Bob Dylan', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C1-WRITER1', 'TMR008-C1', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C1-WRITER2', 'TMR008-C1', 'Dean Fertita', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C1-WRITER3', 'TMR008-C1', 'Jack Lawrence', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C1-WRITER4', 'TMR008-C1', 'Jack White', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C2-GUITAR', 'TMR008-C2', 'Alison Mosshart', 'Guitar');
+INSERT INTO songCredits VALUES ('TMR008-C2-WRITER1', 'TMR008-C2', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C2-WRITER2', 'TMR008-C2', 'Dean Fertita', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C2-WRITER3', 'TMR008-C2', 'Jack Lawrence', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C2-WRITER4', 'TMR008-C2', 'Jack White', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C3-WRITER1', 'TMR008-C3', 'Alison Mosshart', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C3-WRITER2', 'TMR008-C3', 'Jack White', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C4-ACOUSTICGUITAR', 'TMR008-C4', 'Jack White', 'Acoustic Guitar');
+INSERT INTO songCredits VALUES ('TMR008-C3-DRUMS', 'TMR008-C4', 'Jack Lawrence', 'Drums');
+INSERT INTO songCredits VALUES ('TMR008-C3-ENGINEERING', 'TMR008-C4', 'Philip J. Harvey', 'Engineering');
+INSERT INTO songCredits VALUES ('TMR008-C4-WRITER1', 'TMR008-C4', 'Dean Fertita', 'Writer');
+INSERT INTO songCredits VALUES ('TMR008-C4-WRITER2', 'TMR008-C4', 'Jack White', 'Writer');
