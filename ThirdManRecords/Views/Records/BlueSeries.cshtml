@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "BlueSeries";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Blue Series</h2>
+
+<div class="row">
+
+    @for (var i = 0; i < Model.Count; i = i + 3)
+    {
+        <div class="row">
+
+            <div class="col-sm-4">
+                <a href="../records/details?code=@Model[i].code">
+                    <img class="img-responsive" src="@Model[i].cover">
+                </a>
+                <text>@Model[i].title (@Model[i].code)</text>
+            </div>
+
+            @if (Model.Count > i + 1)
+            {
+                <div class="col-sm-4">
+                    <a href="../records/details?code=@Model[i + 1].code">
+                        <img class="img-responsive" src="@Model[i + 1].cover">
+                    </a>
+                    <text>@Model[i + 1].title (@Model[i + 1].code)</text>
+                </div>
+            }
+
+            @if (Model.Count > i + 2)
+            {
+                <div class="col-sm-4">
+                    <a href="../records/details?code=@Model[i + 2].code">
+                        <img class="img-responsive" src="@Model[i + 2].cover">
+                    </a>
+                    <text>@Model[i + 2].title (@Model[i + 2].code)</text>
+                </div>
+            }
+
+        </div>
+
+        <br />
+    }
+
+</div>

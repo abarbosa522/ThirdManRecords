@@ -89,5 +89,24 @@ namespace ThirdManRecords.Controllers
             
             return View(viewModel);
         }
+
+        // /records/blue-series
+        public ActionResult BlueSeries()
+        {
+            var db = new ThirdManContext();
+
+            var query = from r in db.records
+                        where r.series == "Blue Series"
+                        select r;
+
+            var records = new List<Record> { };
+
+            foreach (var record in query)
+            {
+                records.Add(record);
+            }
+
+            return View(records);
+        }
     }
 }

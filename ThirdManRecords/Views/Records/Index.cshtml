@@ -4,6 +4,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<br />
+
+<div id="recordsNavBar" class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Blue Series", "BlueSeries", "Records")</li>
+                <li>@Html.ActionLink("Green Series", "GreenSeries", "Records")</li>
+                <li>@Html.ActionLink("Vault Packages", "VaultPackages", "Records")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <h2>Records</h2>
 
 <div class="row">

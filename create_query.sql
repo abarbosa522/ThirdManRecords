@@ -181,7 +181,7 @@ INSERT INTO bandMembers VALUES ('THEWHITESTRIPES-JACKWHITE', 'The White Stripes'
 INSERT INTO bandMembers VALUES ('THEWHITESTRIPES-MEGWHITE', 'The White Stripes', 'Meg White', 'Drums');
 
 /* TMR003 */
-INSERT INTO artists VALUES ('Mildred And The Mice', 'MAM', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/mildred-and-the-mice.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/mildred-and-the-mice.jpg', 'Blue-Series Artist', 1);
+INSERT INTO artists VALUES ('Mildred And The Mice', 'MAM', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/mildred-and-the-mice.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/mildred-and-the-mice.jpg', 'Blue Series Artist', 1);
 INSERT INTO artists VALUES ('Tail', 'T', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
 INSERT INTO artists VALUES ('Trap', 'T', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
 INSERT INTO artists VALUES ('Mildred', 'M', 'https://img.discogs.com/JdywZaLjgGrTG7FsRMhUdggEbG4=/453x600/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2527841-1323379773.jpeg.jpg', 'https://img.discogs.com/JdywZaLjgGrTG7FsRMhUdggEbG4=/453x600/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2527841-1323379773.jpeg.jpg', 'Other', 0);
@@ -216,7 +216,7 @@ INSERT INTO bandMembers VALUES ('MILDREDANDTHEMICE-TRAP', 'Mildred And The Mice'
 INSERT INTO bandMembers VALUES ('MILDREDANDTHEMICE-SQUEAK', 'Mildred And The Mice', 'Squeak', 'Guitar');
 
 /* TMR004 */
-INSERT INTO artists VALUES ('Rachelle Garniez', 'RG', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/rachelle-garniez.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/rachelle-garniez.jpg', 'Blue-Series Artist', 0);
+INSERT INTO artists VALUES ('Rachelle Garniez', 'RG', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/rachelle-garniez.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/rachelle-garniez.jpg', 'Blue Series Artist', 0);
 
 INSERT INTO records VALUES ('TMR004', 'Rachelle Garniez', 'My House Of Peace', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr004-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr004-cover-ab.jpg', 0, '25 May 2009', 'Blue Series', 'https://thirdmanstore.com/rachelle-garniez-my-house-of-peace-7-vinyl', 'https://open.spotify.com/embed?uri=spotify:album:47OeiRK1qGkqS5VK9XmFBI');
 
@@ -356,3 +356,152 @@ INSERT INTO songCredits VALUES ('TMR008-C3-DRUMS', 'TMR008-C4', 'Jack Lawrence',
 INSERT INTO songCredits VALUES ('TMR008-C3-ENGINEERING', 'TMR008-C4', 'Philip J. Harvey', 'Engineering');
 INSERT INTO songCredits VALUES ('TMR008-C4-WRITER1', 'TMR008-C4', 'Dean Fertita', 'Writer');
 INSERT INTO songCredits VALUES ('TMR008-C4-WRITER2', 'TMR008-C4', 'Jack White', 'Writer');
+
+/* TMR009 */
+INSERT INTO artists VALUES ('Dex Romweber Duo', 'DRD', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/dex-romweber-duo.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/dex-romweber-duo.jpg', 'Blue Series Artist', 1);
+INSERT INTO artists VALUES ('Miles Johnson', 'MJ', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Sara Romweber', 'SR', 'https://img.discogs.com/9i2PPEmxHTej4MT3mzSe6ThA6Yc=/600x399/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-749330-1359165979-4313.jpeg.jpg', 'https://img.discogs.com/9i2PPEmxHTej4MT3mzSe6ThA6Yc=/600x399/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-749330-1359165979-4313.jpeg.jpg', 'Other', 0);
+INSERT INTO artists VALUES ('Brett Steele', 'BS', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Dexter Romweber', 'DR', 'https://img.discogs.com/j2iUhRpglaaQiav32EPK1xrTeaQ=/212x300/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-474212-1399044096-4740.jpeg.jpg', 'https://img.discogs.com/j2iUhRpglaaQiav32EPK1xrTeaQ=/212x300/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-474212-1399044096-4740.jpeg.jpg', 'Other', 0);
+INSERT INTO artists VALUES ('Geechie Wiley', 'GW', 'https://img.discogs.com/Bn9GMTSdICbQvBhxBI_iB0nYRQQ=/335x380/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-516937-1511503864-2123.jpeg.jpg', 'https://img.discogs.com/Bn9GMTSdICbQvBhxBI_iB0nYRQQ=/335x380/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-516937-1511503864-2123.jpeg.jpg', 'Other', 0);
+INSERT INTO artists VALUES ('Jo McCaughey', 'JM', 'https://scontent.cdninstagram.com/vp/28446e60d01fc6786ddbc85fdde627a4/5ADCBE36/t51.2885-15/s640x640/sh0.08/e35/24332539_558513601207614_1666874763173167104_n.jpg', 'https://scontent.cdninstagram.com/vp/28446e60d01fc6786ddbc85fdde627a4/5ADCBE36/t51.2885-15/s640x640/sh0.08/e35/24332539_558513601207614_1666874763173167104_n.jpg', 'Other', 0);
+
+INSERT INTO records VALUES ('TMR009', 'Dex Romweber Duo', 'The Wind Did Move', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr009-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr009-cover-ab.jpg', 0, '9 June 2009', 'Blue Series', 'https://thirdmanstore.com/dex-romweber-duo-the-wind-did-move-7-vinyl', 'https://open.spotify.com/embed?uri=spotify:album:7ECnXzo9s38W9SVg48Xqil');
+
+INSERT INTO recordEditions VALUES ('TMR009-BLACK', 'TMR009', 'Black', 'Unlimited', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr009-black-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR009-GLOW', 'TMR009', 'Glow', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR-glow7inch-abfull.jpg');
+INSERT INTO recordEditions VALUES ('TMR009-TRI-COLOR', 'TMR009', 'Tri-Color', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr009-tricolor-ab.jpg');
+
+INSERT INTO songs VALUES ('TMR009-A', 'TMR009', 'The Wind Did Move', 'A');
+INSERT INTO songs VALUES ('TMR009-B', 'TMR009', 'Last Kind Words Blues', 'B');
+
+INSERT INTO recordCredits VALUES ('TMR009-DESIGN', 'TMR009', 'Miles Johnson', 'Design');
+INSERT INTO recordCredits VALUES ('TMR009-DRUMS', 'TMR009', 'Sara Romweber', 'Drums');
+INSERT INTO recordCredits VALUES ('TMR009-ENGINEERING1', 'TMR009', 'Vance Powell', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR009-ENGINEERING2', 'TMR009', 'Joshua V. Smith', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR009-MANAGEMENT', 'TMR009', 'Brett Steele', 'Management');
+INSERT INTO recordCredits VALUES ('TMR009-MASTERING', 'TMR009', 'Wes Garland', 'Mastering');
+INSERT INTO recordCredits VALUES ('TMR009-MIXING1', 'TMR009', 'Jack White', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR009-MIXING2', 'TMR009', 'Vance Powell', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR009-PHOTOGRAPHY', 'TMR009', 'Jo McCaughey', 'Photography');
+INSERT INTO recordCredits VALUES ('TMR009-PRODUCING', 'TMR009', 'Jack White', 'Producing');
+INSERT INTO recordCredits VALUES ('TMR009-VOCALS1', 'TMR009', 'Jack White', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR009-GUITAR1', 'TMR009', 'Jack White', 'Guitar');
+INSERT INTO recordCredits VALUES ('TMR009-BASS', 'TMR009', 'Jack White', 'Bass');
+INSERT INTO recordCredits VALUES ('TMR009-SAW', 'TMR009', 'Jack White', 'Saw');
+INSERT INTO recordCredits VALUES ('TMR009-VOCALS2', 'TMR009', 'Dexter Romweber', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR009-GUITAR2', 'TMR009', 'Dexter Romweber', 'Guitar');
+INSERT INTO recordCredits VALUES ('TMR009-PIANO', 'TMR009', 'Dexter Romweber', 'Piano');
+INSERT INTO recordCredits VALUES ('TMR009-Organ', 'TMR009', 'Dexter Romweber', 'Orgam');
+
+INSERT INTO songCredits VALUES ('TMR009-A-WRITER', 'TMR009-A', 'Dexter Romweber', 'Writer');
+INSERT INTO songCredits VALUES ('TMR009-B-WRITER', 'TMR009-B', 'Geechie Wiley', 'Writer');
+
+INSERT INTO bandMembers VALUES ('DEXROMWEBERDUO-DEXTERROMWEBER', 'Dex Romweber Duo', 'Dexter Romweber', 'Guitar and Vocals');
+INSERT INTO bandMembers VALUES ('DEXROMWEBERDUO-SARAROMWEBER', 'Dex Romweber Duo', 'Sara Romweber', 'Drums');
+
+/* TMR010 */
+INSERT INTO artists VALUES ('Bobby Liebling', 'BL', 'https://img.discogs.com/vJYbUCL2nT2-ivlNU2BoRMaRNhI=/430x286/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-568439-1334566082.png.jpg', 'https://img.discogs.com/vJYbUCL2nT2-ivlNU2BoRMaRNhI=/430x286/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-568439-1334566082.png.jpg', 'Other', 0);
+INSERT INTO artists VALUES ('Arthur Keith Evans', 'AKE', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Michael O''Donnell', 'MO', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+
+INSERT INTO records VALUES ('TMR010', 'The Dead Weather', 'Forever My Queen', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr010-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr010-cover-ab.jpg', 1, '29 August 2009', 'Vault', 'Not Available', 'Not Available');
+
+INSERT INTO recordEditions VALUES ('TMR010-BLACK', 'TMR010', 'Black', 'Undisclosed', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR010-black-ab.jpg');
+
+INSERT INTO songs VALUES ('TMR010-A', 'TMR010', 'Forever My Queen', 'A');
+INSERT INTO songs VALUES ('TMR010-B', 'TMR010', 'Outside', 'B');
+
+INSERT INTO songCredits VALUES ('TMR010-A-WRITER', 'TMR010-A', 'Bobby Liebling', 'Writer');
+INSERT INTO songCredits VALUES ('TMR010-B-WRITER1', 'TMR010-B', 'Arthur Keith Evans', 'Writer');
+INSERT INTO songCredits VALUES ('TMR010-B-WRITER2', 'TMR010-B', 'Michael O''Donnell', 'Writer');
+
+/* TMR011 */
+INSERT INTO artists VALUES ('Dan Sartain', 'DS', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/dan-sartain.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/dan-sartain.jpg', 'Blue Series Artist', 0);
+INSERT INTO artists VALUES ('Matt Patton', 'MP', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Adam Renshaw', 'AR', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+
+INSERT INTO records VALUES ('TMR011', 'Dan Sartain', 'Bohemian Grove', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr011-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr011-cover-ab.jpg', 0, '2009', 'Blue Series', 'https://thirdmanstore.com/dan-sartain-bohemian-grove-7-vinyl', 'https://open.spotify.com/embed?uri=spotify:album:4nJ3FL85Fma3cDWd1IiLMz');
+
+INSERT INTO recordEditions VALUES ('TMR011-BLACK', 'TMR011', 'Black', 'Unlimited', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr011-black-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR011-TRI-COLOR', 'TMR011', 'Tri-Color', '150', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr011-tricolor-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR011-GLOW', 'TMR011', 'Glow', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR-glow7inch-abfull.jpg');
+
+INSERT INTO songs VALUES ('TMR011-A', 'TMR011', 'Bohemian Grove', 'A');
+INSERT INTO songs VALUES ('TMR011-B', 'TMR011', 'Atheist Funeral', 'B');
+
+INSERT INTO recordCredits VALUES ('TMR011-BASS', 'TMR011', 'Matt Patton', 'Bass');
+INSERT INTO recordCredits VALUES ('TMR011-DESIGN', 'TMR011', 'Miles Johnson', 'Design');
+INSERT INTO recordCredits VALUES ('TMR011-DRUMS', 'TMR011', 'Adam Renshaw', 'Drums');
+INSERT INTO recordCredits VALUES ('TMR011-ENGINEERING1', 'TMR011', 'Joshua V. Smith', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR011-ENGINEERING2', 'TMR011', 'Vance Powell', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR011-MIXING1', 'TMR011', 'Vance Powell', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR011-PHOTOGRAPHY', 'TMR011', 'Jo McCaughey', 'Photography');
+INSERT INTO recordCredits VALUES ('TMR011-PIANO', 'TMR011', 'Jack White', 'Piano');
+INSERT INTO recordCredits VALUES ('TMR011-MIXING2', 'TMR011', 'Jack White', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR011-PRODUCING', 'TMR011', 'Jack White', 'Producing');
+INSERT INTO recordCredits VALUES ('TMR011-VOCALS', 'TMR011', 'Dan Sartain', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR011-GUITAR', 'TMR011', 'Dan Sartain', 'Guitar');
+
+INSERT INTO songCredits VALUES ('TMR011-A-WRITER', 'TMR011-A', 'Dan Sartain', 'Writer');
+INSERT INTO songCredits VALUES ('TMR011-B-WRITER', 'TMR011-B', 'Dan Sartain', 'Writer');
+
+/* TMR012 */
+INSERT INTO artists VALUES ('Transit', 'T', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/_resampled/CroppedImageWzE3NSwxNzVd/transit.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/ArtistPhotos/transit.jpg', 'Blue Series Artist', 1);
+INSERT INTO artists VALUES ('John Scott Martin', 'JSM', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Jason D. Waters', 'JDW', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('James Dasilva', 'JD', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('James Dunn Jr.', 'JDJ', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('David Reedy', 'DR', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Sax', 'S', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Cynthia Whitehead', 'CW', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Dianne Hill', 'DH', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('James Dunn Sr.', 'JDS', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Priscilla Barcous', 'PB', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+INSERT INTO artists VALUES ('Vileta Phillips', 'VP', 'https://s.discogs.com/images/default-release.png', 'https://s.discogs.com/images/default-release.png', 'Other', 0);
+
+INSERT INTO records VALUES ('TMR012', 'Transit', 'C''mon And Ride', 7, 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/_resampled/SetWidthWzIwMCwyMDBd/tmr012-cover-a.jpg', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr012-cover-ab.jpg', 0, '12 August 2009', 'Blue Series', 'https://thirdmanstore.com/transit-c-mon-and-ride-7-vinyl', 'https://open.spotify.com/embed?uri=spotify:album:7J2zDIyWroAmDppwt1GWso');
+
+INSERT INTO recordEditions VALUES ('TMR012-BLACK', 'TMR012', 'Black', 'Unlimited', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr012-black-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR012-TRI-COLOR', 'TMR012', 'Tri-Color', '150', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/tmr012-tricolor-ab.jpg');
+INSERT INTO recordEditions VALUES ('TMR012-GLOW', 'TMR012', 'Glow', '100', 'https://d3mjk82f332v2.cloudfront.net/assets/CatalogPhotos/TMR-glow7inch-abfull.jpg');
+
+INSERT INTO songs VALUES ('TMR012-A', 'TMR012', 'C''mon And Ride', 'A');
+INSERT INTO songs VALUES ('TMR012-B', 'TMR012', 'After Party', 'B');
+
+INSERT INTO recordCredits VALUES ('TMR012-DESIGN', 'TMR012', 'Miles Johnson', 'Design');
+INSERT INTO recordCredits VALUES ('TMR012-ENGINEERING1', 'TMR012', 'Vance Powell', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR012-ENGINEERING2', 'TMR012', 'Joshua V. Smith', 'Engineering');
+INSERT INTO recordCredits VALUES ('TMR012-MIXING1', 'TMR012', 'Jack White', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR012-MIXING2', 'TMR012', 'Vance Powell', 'Mixing');
+INSERT INTO recordCredits VALUES ('TMR012-BASS', 'TMR012', 'John Scott Martin', 'Bass');
+INSERT INTO recordCredits VALUES ('TMR012-DRUMS', 'TMR012', 'Jason D. Waters', 'Drums');
+INSERT INTO recordCredits VALUES ('TMR012-GUITAR', 'TMR012', 'James Dasilva', 'Guitar');
+INSERT INTO recordCredits VALUES ('TMR012-KEYBOARDS', 'TMR012', 'James Dunn Jr.', 'Keyboards');
+INSERT INTO recordCredits VALUES ('TMR012-ORGAN', 'TMR012', 'James Dunn Jr.', 'Organ');
+INSERT INTO recordCredits VALUES ('TMR012-RAP', 'TMR012', 'David Reedy', 'Rap');
+INSERT INTO recordCredits VALUES ('TMR012-SAXOPHONE', 'TMR012', 'Sax', 'Saxophone');
+INSERT INTO recordCredits VALUES ('TMR012-VOCALS1', 'TMR012', 'Cynthia Whitehead', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR012-VOCALS2', 'TMR012', 'Dianne Hill', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR012-VOCALS3', 'TMR012', 'James Dunn Sr.', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR012-VOCALS4', 'TMR012', 'John Scott Martin', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR012-VOCALS5', 'TMR012', 'Priscilla Barcous', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR012-VOCALS6', 'TMR012', 'Vileta Phillips', 'Vocals');
+INSERT INTO recordCredits VALUES ('TMR012-PHOTOGRAPHY', 'TMR012', 'Jo McCaughey', 'Photography');
+INSERT INTO recordCredits VALUES ('TMR012-PRODUCING', 'TMR012', 'Jack White', 'Producing');
+
+INSERT INTO songCredits VALUES ('TMR012-A-WRITER', 'TMR012-A', 'James Dunn Sr.', 'Writer');
+INSERT INTO songCredits VALUES ('TMR012-B-WRITER1', 'TMR012-B', 'James Dunn Sr.', 'Writer');
+INSERT INTO songCredits VALUES ('TMR012-B-WRITER2', 'TMR012-B', 'David Reedy', 'Writer');
+
+INSERT INTO bandMembers VALUES ('TRANSIT-JOHNSCOTTMARTIN', 'Transit', 'John Scott Martin', 'Bass and Vocals');
+INSERT INTO bandMembers VALUES ('TRANSIT-JASONDWATERS', 'Transit', 'Jason D. Waters', 'Drums');
+INSERT INTO bandMembers VALUES ('TRANSIT-JAMESDASILVA', 'Transit', 'James Dasilva', 'Guitar');
+INSERT INTO bandMembers VALUES ('TRANSIT-JAMESDUNNJR', 'Transit', 'James Dunn Jr.', 'Keyboards and Organ');
+INSERT INTO bandMembers VALUES ('TRANSIT-DAVIDREEDY', 'Transit', 'David Reedy', 'Rap and Writing');
+INSERT INTO bandMembers VALUES ('TRANSIT-SAX', 'Transit', 'Sax', 'Saxophone');
+INSERT INTO bandMembers VALUES ('TRANSIT-CYNTHIAWHITEHEAD', 'Transit', 'Cynthia Whitehead', 'Vocals');
+INSERT INTO bandMembers VALUES ('TRANSIT-DIANNEHILL', 'Transit', 'Dianne Hill', 'Vocals');
+INSERT INTO bandMembers VALUES ('TRANSIT-JAMESDUNNSR', 'Transit', 'James Dunn Sr.', 'Vocals and Writing');
+INSERT INTO bandMembers VALUES ('TRANSIT-PRISCILLABARCOUS', 'Transit', 'Priscilla Barcous', 'Vocals');
+INSERT INTO bandMembers VALUES ('TRANSIT-VILETAPHILLIPS', 'Transit', 'Vileta Phillips', 'Vocals');
